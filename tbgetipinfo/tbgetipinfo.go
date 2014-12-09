@@ -43,7 +43,7 @@ func getipinfo(ipaddr string) {
 	}
 	var tbapiinfo TbApi
 	json.Unmarshal(body, &tbapiinfo)
-	fmt.Printf("IP地址:%s 状态:%v 城市:%s 运营商:%s\n", tbapiinfo.Data.Ip, tbapiinfo.Code, tbapiinfo.Data.City, tbapiinfo.Data.Isp)
+	fmt.Printf("IP地址:%s 状态:%v 国家:%s 省:%s 城市:%s 运营商:%s\n", tbapiinfo.Data.Ip, tbapiinfo.Code, tbapiinfo.Data.County, tbapiinfo.Data.Region, tbapiinfo.Data.City, tbapiinfo.Data.Isp)
 }
 
 func IsIP(ip string) (b bool) {
