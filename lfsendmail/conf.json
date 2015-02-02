@@ -1,5 +1,6 @@
 {
 "Username": "noreply@lianwifi.com",
-"Password": "wifikey",
-"Smtphost":"175.102.131.20:25"
+"Password": "password",
+"Smtphost": "192.168.1.1:25",
+"Mailto": "1001@qq.com"
 }
